@@ -1,0 +1,149 @@
+@import url(//db.onlinewebfonts.com/c/40f7f5bfc47071f7666889216c2362b5?family=MingLiU);
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  font-family: 'MingLiU', monospace;
+  font-size: 20px;
+  position: fixed;
+  text-align: center;
+  color: black;
+  opacity: 1;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.btn {
+  font-family: MingLiU;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition: 0.5s;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+}
+
+.btn:hover {
+    background-color: #444;
+   opacity: 1;
+    cursor: pointer;
+}
+
+.container {
+    position: fixed;
+    padding-top: 325px;
+    text-align: center;
+    width: 100%;
+}
+
+#name {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    z-index: 100;
+    margin-top: -95px;
+    margin-left: 385px;
+}
+
+/*-----Sidebar-----*/
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: .7;
+  text-align: justify;
+  background-color: rgba(0,0,0,.5);
+    color: white;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  opacity: 1;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  font-family: MingLiu;
+  cursor: pointer;
+  background-color: #111;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+  opacity: 0.8;
+}
+
+#main {
+  position: fixed;
+  top: 10px;
+  transition: margin-left .5s;
+}
+
+.about {
+    font-size: 60px;
+    padding-left: 10px;
+        margin-top: -1px;
+}
+
+.abouttext {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -30px;
+}
+/*-----refresh-----*/
+
+#refresh {
+    transition: all 0.5s ease-in-out;
+    margin-top: 200px;
+    z-index: 100;
+}
+
+/*-----boxes-----*/
+.grid-container {
+  margin-top: -400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . . ."
+    ". weather1 . weather2 ."
+    ". . . . .";
+}
+
+.weather1 { grid-area: weather1; }
+
+.weather2 { grid-area: weather2; }
+
